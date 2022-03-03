@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="indexcss.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo">Rainking </div>
+            <div class="navright">
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Product</a></li>
+                    <li><a href="checkwarranty.html">Check Warranty</a></li>
+                    <li><a href="contact us.html">Contact Us</a></li>
+                </ul>
+                <button><a href=""> Login/Sign Up</a></button>                     
+                <div><i class="fa fa-shopping-cart"></i></div> 
+            </div>
+        </div>
+    </header><div class="container     ">
+       
+
+    <img class="mySlides" src="https://images.unsplash.com/photo-1579546929518-9e396f3cc809?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8Mnx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60">
+<img class="mySlides" src="https://images.unsplash.com/photo-1620641788421-7a1c342ea42e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8N3x8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60">
+<img class="mySlides" src="img_mountains.jpg">
+<img class="mySlides" src="https://images.unsplash.com/photo-1620641788421-7a1c342ea42e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8N3x8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60">
+<div class="btn"> <button id="left" class="w3-button w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+    <button id="right" class="w3-button w3-display-right" onclick="plusDivs(+1)">&#10095;</button></div>
+</div>
+
+
+</body>
+<script>
+    var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length} ;
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  x[slideIndex-1].style.display = "block";
+}
+</script>
+
+</html>
