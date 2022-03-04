@@ -57,6 +57,10 @@ nav ul li a:hover {
     text-decoration: underline;
 
 }
+.active{
+    color: #EF8216;
+    text-decoration: underline;
+}
 
 nav ul button {
     cursor: pointer;
@@ -188,8 +192,8 @@ nav ul button {
 
 /* ......................testinomial.............. */
 .container-warranty {
-
-    height: 100vh;
+margin-top:-10px ;
+    
     width: 100vw;
     display: flex;
     justify-content: center;
@@ -198,9 +202,7 @@ nav ul button {
     align-content: center;
 }
 
-.container-warranty {
-    background: url(images/4.jpg);
-}
+
 
 .warranty-box {
     background-color: white;
@@ -249,11 +251,17 @@ nav ul button {
 }
 
 .container-check button {
+
     width: 13rem;
     font-size: 1rem;
     padding: 1rem;
     margin: 1rem;
     /* margin-left: 4.5rem; */
+
+}
+.container-check .btn{
+    display: flex;
+    justify-content: space-around;
 
 }
 
@@ -357,3 +365,123 @@ nav ul button {
         margin: 20px;
     }
 }
+
+
+/* $$$$$$$$$$$$$$$$$$$$$$$$$$$text slide down>>>>>>>>>>>>>>>>>>>>>>> */
+.left-first-page{
+    margin-left: 50px;
+    margin-right: 50px;
+    justify-content: center;
+    /* align-items: center; */
+    /* align-content: center; */
+    justify-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 100px;
+    justify-content: space-between;
+    }
+    .left-first-page
+.right-image-slide-down img{
+    height: 400px;
+    width: 400px;
+}
+.left-first-page div h1{
+    font-size: 40px;
+    
+    
+    
+}
+.left-first-page div p{
+   padding-top: 50px;
+    font-size: 25px;
+
+}
+
+
+/* ................................................. */
+.first-page-products{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    text-align: center;
+    margin-left: 80px;
+    margin-right: 80px;
+
+}
+.firs-product{
+    background-color: aqua;
+    }
+.first-page-products img{
+    height: 300px;
+    width: 300px;
+}
+.heighlight{
+    text-align: center;
+    margin: 10px;
+    margin-left: 0px;
+    margin-right: 0px;
+    font-size:50px;
+    background-color: aqua;
+}
+.exploreproduct-button{
+    text-align: center;
+    margin: 20px;
+    margin-left: 0px;
+    margin-right: 0px;
+    font-size:25px;
+    margin-top: 60px;
+}
+.exploreproduct-button a{
+    text-decoration: none;
+    background-color: #EF8216;
+    color: #ffffff;
+    padding: 15px;
+    padding-left: 70px;
+    padding-right: 70px;
+
+}
+.row{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    margin-left: 100px;
+    margin-right: 100px;
+
+}
+.footer-dark {
+    padding:50px 0;
+    color:#f0f9ff;
+    display: grid;
+    justify-items: center;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    background-color:#282d32;
+  }
+   footer .container{
+      display: grid;
+      justify-items: center;
+      align-content: center;
+      justify-content: center;
+      align-items: center;
+
+
+  } 
+  .w{
+   
+      height: 100vh;
+      display: grid;
+      grid-template-columns: 1fr;
+     align-content: space-between;
+  }
+  #myVideo {
+      z-index: -20;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+  }
