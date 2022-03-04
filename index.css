@@ -351,6 +351,14 @@ border: none;
     .mySlides{
         height: 300px;
       }
+      .slide-image button{
+   
+        height: 50px;
+        width: 20px;
+       
+        margin-top: -150px;
+      
+    }
     /* .btn button{
         margin-top:-200px;
         height: 100px;
