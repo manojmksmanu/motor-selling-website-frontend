@@ -1,0 +1,268 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+
+}
+body{
+ 
+    
+}
+#nav{
+    display: flex;
+    justify-content: space-between;
+}
+html{
+    font-size: 10px;
+}
+.Navbar__Link-brand{
+    font-size: 5rem;
+    display: flex;
+   
+   }
+
+.Navbar {
+    background-color: #0B3249;
+   
+    display: flex;
+    padding: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-family: sans-serif;
+    color: white;
+    justify-content: space-between;
+    position:sticky;
+    z-index: 30;
+  }
+  .Navbar__Items {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      justify-items: center;
+      align-content: center;
+      margin-left:1rem;
+      margin-right: 1rem;
+      z-index: 30;
+     
+  }
+  .Navbar__Link a{
+      text-decoration: none;
+      color: white;
+      font-size: 2.7rem;  
+      margin-left:4rem;
+      margin-right: 4rem; 
+      margin-top: 1rem;
+        margin-bottom: 1rem; 
+        font-family: sans-serif;
+        /* font-weight: bold; */
+    }
+  .Navbar__Link a:hover{
+      text-decoration: underline;
+      color:#EF8216;
+     
+    }
+    .Navbar__Link button{
+        font-family: sans-serif;
+        background-color:#EF8216 ;
+        color: white;
+        border: none;
+        font-size:2.7rem;
+        padding: 1rem;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        margin-left:4rem;
+        margin-right: 4rem; 
+        cursor: pointer;     
+    } 
+
+  .logo{
+      display: flex;
+      justify-content: space-between;
+  }
+  .img{
+      width: 20px;
+      height: 20px;
+  }
+  
+  .Navbar__Link {
+    padding-right: 8px;
+    
+  }
+  
+  .Navbar__Items {
+    display: flex;
+  }
+  
+
+  .Navbar__Link-toggle {
+    display: none;
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .Navbar__Items,
+    .Navbar {
+      flex-direction: column;
+    }
+    .Navbar__Link{
+        font-size: 30px;
+        margin: 20px;
+    }
+      
+  .Navbar__Items {
+      display:none;
+    }
+      
+  .Navbar__Items--right {
+      margin-left:0;
+    }
+      
+  .Navbar__ToggleShow {
+      display: flex;
+    }
+      
+  .Navbar__Link-toggle {
+      align-self: flex-end;
+      display: initial;
+      position: absolute;
+      cursor: pointer;
+     } 
+  }
+
+
+
+  /* _______________________check warranty css_______________________ */
+  html{
+     
+  }
+  .container-warranty{
+
+      height: 100vh;
+      width: 100vw;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      justify-items: center;
+      align-content: center;
+  }
+
+  .warranty-box{
+      background-color: white;
+      width: fit-content;
+  }
+  .check-box{
+    height: fit-content;
+   
+    background: rgba(225, 225, 225, 0.2);
+    
+    box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.3);
+    border-top: 1px solid rgba(225,225, 225, 0.3); 
+    border-left: 1px solid rgba(225,225, 225, 0.3); 
+}
+.check-box h1{
+    background-color:#EF8216 ;
+    font-family: sans-serif;
+    padding: 1.5rem;
+    color: white;
+
+}
+.container-check{
+    display: flex;
+    flex-direction: column;
+    margin: 3.8rem;
+}
+.container-check input {
+    font-size: 3rem;
+    padding: 2rem;
+    /* border: 10px; */
+    width:60rem ;
+    height: 5rem;
+    margin: 4rem;
+    border: none;
+    background: rgba(241, 241, 241, 0.2);
+    
+    box-shadow: 0 0.2rem 1rem rgba(0, 0, 0, 0.3);
+    border-top: 1px solid rgba(225,225, 225, 0.3); 
+    border-left: 1px solid rgba(225,225, 225, 0.3); 
+
+    
+}
+.container-check button{
+    width: 26rem;
+    font-size:2rem;
+    padding: 2rem;
+    margin: 2rem;
+   margin-left: 4.5rem;
+   
+}
+.forgot{
+    font-family: sans-serif;
+    background: none;
+    font-weight: bolder;
+    color: #ffffff;
+    background-color:#EF8216;
+    cursor: pointer;
+border: none;
+   }
+.check{
+    font-family: sans-serif;
+    background: none;
+    font-weight: bolder;
+    color: #ffffff;
+    background-color:#EF8216;
+    cursor: pointer;
+ border: none;
+   }
+   /* ##############slide images$$$$$$$$$$$$ */
+   #imagea{
+       background-image: url("images/1.avif");
+       background-position: center;
+       background-size: cover;
+      
+ }
+   #imageb{
+       background-image: url("images/2.avif");
+       background-position: center;
+       background-size: cover;
+      
+ }
+   #imagec{
+       background-image: url("images/3.avif");
+       background-position: center;
+       background-size: cover;
+      
+ }
+   #imaged{
+       background-image: url("images/4.avif");
+       background-position: center;
+       background-size: cover;
+      
+ }
+ .mySlides{
+     height: 400px;
+ }
+   .slide-image{
+       width: 100vw;
+   }
+   /* .slide-image img{
+       width: 100vw;
+       height: 400px;
+   } */
+   .slide-image button{
+      
+       height: 190px;
+       width: 40px;
+       z-index: 20;
+       margin-top: -300px;
+     
+   }
+   .btn{
+       display: flex;
+       justify-content: space-between;
+   }
+
+   /* .....................contactus.................. */
+   .btn .send-contactinfo{
+    width: 100%;
+    background-color: #EF8216;
+    
+   }

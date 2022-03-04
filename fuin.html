@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="indexcss.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="Navbar">
+       
+        <div class="Navbar__Link Navbar__Link-brand">
+       RainKing Gold
+         </div>
+       
+         <div class="Navbar__Link Navbar__Link-toggle">
+            <i class="fa fa-car" style="font-size:60px;color:red;"></i>
+         </div>
+        
+       <nav class="Navbar__Items">
+         <div class="Navbar__Link">
+           <a href="">Home</a>
+         </div>
+         <div class="Navbar__Link">
+           <a href="">Product</a>
+         </div>
+         <div class="Navbar__Link">
+           <a href="checkwarranty.html">Check Warranty</a>
+         </div>
+         <div class="Navbar__Link">
+           <a href="contact us.html">Contact Us</a>
+         </div>
+         <div class="Navbar__Link">
+           cart
+          </div>
+         <div class="Navbar__Link">
+           <button>Login/Sign Up</button>
+         </div>
+        
+       </nav>
+   
+       <!-- <nav class="Navbar__Items Navbar__Items--right">
+         <div class="Navbar__Link">
+           Link
+         </div>
+         <div class="Navbar__Link">
+           Link
+         </div>
+       </nav> -->
+     </div>
+     <div class="main-container">
+     <div class="slide-image">
+        <!-- <img class="mySlides" src="images/1.avif">
+        <img class="mySlides" src="images/2.avif">
+        <img class="mySlides" src="images/3.avif">
+        <img class="mySlides" src="images/4"> -->
+        <div class="mySlides" id="imagea"> <h1></h1> </div>
+        <div class="mySlides" id="imageb"></div>
+        <div class="mySlides" id="imagec"></div>
+        <div class="mySlides" id="imaged"></div>
+       <div class="btn"> <button class="w3-button w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+<button class="w3-button w3-display-right" onclick="plusDivs(+1)">&#10095;</button>
+</div>
+     </div>
+    </div>
+</body>
+<script>
+function classToggle() {
+  const navs = document.querySelectorAll('.Navbar__Items')
+  
+  navs.forEach(nav => nav.classList.toggle('Navbar__ToggleShow'));
+}
+
+document.querySelector('.Navbar__Link-toggle')
+  .addEventListener('click', classToggle);
+</script>
+<script>
+    var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length} ;
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  x[slideIndex-1].style.display = "block";
+}
+var slideIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > x.length) {slideIndex = 1}
+  x[slideIndex-1].style.display = "block";
+  setTimeout(carousel, 6000); // Change image every 2 seconds
+}
+</script>
+<!-- ....................testimonial................ -->
+<script >
+  const wrapper = document.querySelector('.wrapper');
+const indicators = [...document.querySelectorAll('.indicators button')];
+
+let currentTestimonial = 0; // Default 0
+
+indicators.forEach((item, i) => {
+    item.addEventListener('click', () => {
+        indicators[currentTestimonial].classList.remove('active');
+        wrapper.style.marginLeft = `-${100 * i}%`;
+        item.classList.add('active');
+        currentTestimonial = i;
+    })
+})
+</script>
+</html>

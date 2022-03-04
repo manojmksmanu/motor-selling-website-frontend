@@ -6,14 +6,18 @@
 body{
     width: 100vw;
     height: 100vh;
+ 
+}
+.check-box{
+    height: fit-content;
+   
     display: flex;
     justify-content: center;
     justify-items:center ;
     align-items: center;
     align-content: center;
-}
-.check-box{
-    height: fit-content;
+    flex-direction: column;
+   
    
     background: rgba(225, 225, 225, 0.2);
     

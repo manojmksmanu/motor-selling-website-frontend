@@ -5,27 +5,61 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
     <meta name="viewport" content="width=device-width">
+   
     <title>Document</title>
-<link rel="stylesheet" href="contact us.css">
+<link rel="stylesheet" href="index.css">
+<link rel="script" href="">
 </head>
 <body>
+   
+  <div class="header-navigation">
+    <nav>
+      <input type="checkbox" name="" id="check">
+      <label for="check" class="checkbtn">
+     
+        <img class="img" src="images/w.png" alt="">
+      </label>
+      <div class="logo">
+        <p>RainKing</p>
+      </div>
+      <ul>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="">ABOUT</a></li>
+        <li><a href="">PRODUCT</a></li>
+        <li><a href="checkwarranty.html">CHECK WARRANTY</a></li>
+        <li><a href="contact us.html">CONTACT US</a></li>
+        <button class="login"> Login/Sign Up</button>
+      </ul>
+    </nav>
+  </div>
+     <div class="container-warranty">
+        <!-- <video autoplay muted loop id="myVideo">
+            <source src="https://media.istockphoto.com/videos/tropical-rain-drops-falling-on-wooden-terrace-in-the-tropical-forest-video-id1316455077" type="video/mp4">
+          </video> -->
+     <div class="warranty-box">
     <div class="check-box">
         <h1>Contact Us</h1>
         <div class="container-check">
             <input type="text" placeholder="Enter Product ID">
             <input type="text" placeholder="Enter Your Name">
-            <input type="text" placeholder="Enter Your Mail(optional)">
-            <input type="text" placeholder="Enter Message(optional)">
-            <div class="btn"><button class="Send"> Send</button>
+            <input type="text" placeholder="Enter Your Email">
+            
+            <div class="btn" id="contact-info"><button class="send-contactinfo"> Send</button>
             </div>
         </div>
-        <div class="contact-logo">
-            <h1>A</h1>
-            <h1>B</h1>
-            <h1>C</h1>
-            <h1>D</h1>
-        </div>
     </div>
+</div>
+</div>
     
 </body>
+<script>
+    function classToggle() {
+      const navs = document.querySelectorAll('.Navbar__Items')
+      
+      navs.forEach(nav => nav.classList.toggle('Navbar__ToggleShow'));
+    }
+    
+    document.querySelector('.Navbar__Link-toggle')
+      .addEventListener('click', classToggle);
+    </script>
 </html>

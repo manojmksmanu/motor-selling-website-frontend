@@ -1,51 +1,152 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="indexcss.css">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
-
 <body>
-    <header>
-        <div class="navbar">
-            <div class="logo">Rainking </div>
-            <div class="navright">
-                <ul>
-                    <li><a href="">Home</a></li>
-                    <li><a href="">Product</a></li>
-                    <li><a href="checkwarranty.html">Check Warranty</a></li>
-                    <li><a href="contact us.html">Contact Us</a></li>
-                </ul>
-                <button><a href=""> Login/Sign Up</a></button>                     
-                <div><i class="fa fa-shopping-cart"></i></div> 
-            </div>
-        </div>
-    </header><div class="container     ">
-       
+  <div class="header-navigation">
+    <nav>
+      <input type="checkbox" name="" id="check">
+      <label for="check" class="checkbtn">
+     
+        <img class="img" src="images/w.png" alt="">
+      </label>
+      <div class="logo">
+        <p>RainKing</p>
+      </div>
+      <ul>
+        <li><a href="">HOME</a></li>
+        <li><a href="">ABOUT</a></li>
+        <li><a href="">PRODUCT</a></li>
+        <li><a href="checkwarranty.html">CHECK WARRANTY</a></li>
+        <li><a href="contact us.html">CONTACT US</a></li>
+        <button class="login"> Login/Sign Up</button>
+      </ul>
+    </nav>
+  </div>
+  <div class="slide-image">
+    <!-- <img class="mySlides" src="images/1.avif">
+    <img class="mySlides" src="images/2.avif">
+    <img class="mySlides" src="images/3.avif">
+    <img class="mySlides" src="images/4"> -->
+    <div class="mySlides" id="imagea"> <h1></h1> </div>
+    <div class="mySlides" id="imageb"></div>
+    <div class="mySlides" id="imagec"></div>
+    <div class="mySlides" id="imaged"></div>
+   <div class="btn"> <button class="w3-button w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+<button class="w3-button w3-display-right" onclick="plusDivs(+1)">&#10095;</button>
+</div>
+ </div>
 
-    <img class="mySlides" src="https://images.unsplash.com/photo-1579546929518-9e396f3cc809?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8Mnx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60">
-<img class="mySlides" src="https://images.unsplash.com/photo-1620641788421-7a1c342ea42e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8N3x8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60">
-<img class="mySlides" src="img_mountains.jpg">
-<img class="mySlides" src="https://images.unsplash.com/photo-1620641788421-7a1c342ea42e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8N3x8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60">
-<div class="btn"> <button id="left" class="w3-button w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
-    <button id="right" class="w3-button w3-display-right" onclick="plusDivs(+1)">&#10095;</button></div>
+
+ <!-- ........................featured products.................
+ <div class="heigh"> <h1>FEATURED PRODUCTS</h1></div>
+ ......................products............................ -->
+ <div class="product-featured">
+<div class="product-one">
+  <div class="card">
+    <img src="images/_MG_7554.JPG" alt="Denim Jeans" style="width:100%">
+    <h1>Tailored Jeans</h1>
+    <p class="price">$19.99</p>
+    <p>Some text about the jeans..</p>
+    <p><button>Buy Now</button></p>
+  </div>
+  
+</div>
+<div class="product-two">
+  <div class="card">
+    <img src="images/_MG_7555.JPG" alt="Denim Jeans" style="width:100%">
+    <h1>Tailored Jeans</h1>
+    <p class="price">$19.99</p>
+    <p>Some text about the jeans..</p>
+    <p><button>Buy Now</button></p>
+  </div>
+</div>
+<div class="product-three">
+  <div class="card">
+    <img src="images/_MG_7556.JPG" alt="Denim Jeans" style="width:100%">
+    <h1>Tailored Jeans</h1>
+    <p class="price">$19.99</p>
+    <p>Some text about the jeans..</p>
+    <p><button>Buy Now</button></p>
+  </div>
+</div>
+<div class="product-four">
+  <div class="card">
+    <img src="images/_MG_7558.JPG" alt="Denim Jeans" style="width:100%">
+    <h1>Tailored Jeans</h1>
+    <p class="price">$19.99</p>
+    <p>Some text about the jeans..</p>
+    <p><button>Buy Now</button></p>
+  </div>
+</div>
+<div class="product-five">
+  <div class="card">
+    <img src="images/_MG_7561.JPG" alt="Denim Jeans" style="width:100%">
+    <h1>Tailored Jeans</h1>
+    <p class="price">$19.99</p>
+    <p>Some text about the jeans..</p>
+    <p><button>Buy Now</button></p>
+  </div>
+</div>
+<div class="product-six">
+  <div class="card">
+    <img src="images/_MG_7564.JPG" alt="Denim Jeans" style="width:100%">
+    <h1>Tailored Jeans</h1>
+    <p class="price">$19.99</p>
+    <p>Some text about the jeans..</p>
+    <p><button>Buy Now</button></p>
+  </div>
+</div>
+<div class="product-seven">
+  <div class="card">
+    <img src="images/_MG_7564.JPG" alt="Denim Jeans" style="width:100%">
+    <h1>Tailored Jeans</h1>
+    <p class="price">$19.99</p>
+    <p>Some text about the jeans..</p>
+    <p><button>Buy Now</button></p>
+  </div>
+</div>
+<div class="product-eight">
+  <div class="card">
+    <img src="images/_MG_7564.JPG" alt="Denim Jeans" style="width:100%">
+    <h1>Tailored Jeans</h1>
+    <p class="price">$19.99</p>
+    <p>Some text about the jeans..</p>
+    <p><button>Buy Now</button></p>
+  </div>
 </div>
 
 
+ </div>
+ <div class="exploremore"> <a href="">Explore More products</a>
+   </div>
+   <div class="text">
+      </div>
+      <div class="indicators">
+          <button class="active"></button>
+          <button></button>
+          <button></button>
+      </div>
+  </div>
+
+  
 </body>
-<script>
-    var slideIndex = 1;
+  <script>
+     var slideIndex = 1;
 showDivs(slideIndex);
 
 function plusDivs(n) {
   showDivs(slideIndex += n);
 }
 
-function showDivs(n) {
+    function showDivs(n) {
   var i;
   var x = document.getElementsByClassName("mySlides");
   if (n > x.length) {slideIndex = 1}
@@ -55,6 +156,20 @@ function showDivs(n) {
   }
   x[slideIndex-1].style.display = "block";
 }
-</script>
+var slideIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > x.length) {slideIndex = 1}
+  x[slideIndex-1].style.display = "block";
+  setTimeout(carousel, 6000); // Change image every 2 seconds
+}
+  </script>
 
 </html>
