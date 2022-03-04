@@ -168,9 +168,9 @@ nav ul button{
     grid-template-columns: 1fr 1fr 1fr 1fr;
     padding: 40px;
 }
-.card{
+/* .card{
     
-}
+} */
 .card {
     box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2);
     max-width: 400px;
