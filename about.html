@@ -3,15 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-
-    <meta name="viewport" content="width=device-width">
-   
-    <title>Document</title>
-<link rel="stylesheet" href="index.css">
-<link rel="script" href="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>about</title>
 </head>
 <body>
-  <div class="w"> 
+  <div class="w">
     <div class="header-navigation">
       <nav>
         <input type="checkbox" name="" id="check" > 
@@ -23,25 +20,20 @@
           <p>RKG</p>
         </div>
         <ul>
-          <li><a href="index.html" >HOME</a></li>
-          <li><a href="about.html">ABOUT</a></li>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="about.html" class="active">ABOUT</a></li>
           <li><a href="products.html">PRODUCT</a></li>
-          <li><a href="checkwarranty.html" class="active">CHECK WARRANTY</a></li>
+          <li><a href="checkwarranty.html">CHECK WARRANTY</a></li>
           <li><a href="contact us.html">CONTACT US</a></li>
         </ul>
       </nav>
     </div>
-     <div class="container-warranty">
-      <div class="check-box">
-        <h1>Check warranty</h1>
-        <div class="container-check">
-            <input type="text" placeholder="Enter Product ID">
-            <input type="text" placeholder="Enter Your Name">
-            <div class="btn"><button class="forgot"> Forgot product Id</button>
-            <button class="check"> Check</button></div>
-        </div>
-    </div>
+<div class="about-box">
+  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic ratione repellat, nemo optio dolorem voluptate debitis voluptates quaerat maxime sit suscipit vel beatae, voluptas facilis doloremque minus distinctio. Voluptate, placeat!
+Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam ducimus quisquam dolor soluta facilis sint non, deserunt esse, ab ipsa doloremque blanditiis voluptatibus veniam aliquam harum, eligendi est autem quos.
+
 </div>
+
 <!-- Footer -->
 <div class="footer-dark">
   <footer>
@@ -79,14 +71,4 @@
 </div>
 </div>
 </body>
-<script>
-    function classToggle() {
-      const navs = document.querySelectorAll('.Navbar__Items')
-      
-      navs.forEach(nav => nav.classList.toggle('Navbar__ToggleShow'));
-    }
-    
-    document.querySelector('.Navbar__Link-toggle')
-      .addEventListener('click', classToggle);
-    </script>
 </html>
